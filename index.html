@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es-CO">
 <head>
 	<title>PeGacerus</title>
 	<meta charset="utf-8">
-	<meta name="keywords" content="PeGacerus">
+	<meta name="keywords" content="PeGacerus - Pegante Cerámico, Fabricamos productos para acabados en la construcción, Pintulato - Pintura Vinílica; Plastato - Estuco; Paraveno - Impermeabilizante; Boquilla; Edgar Rincón Salazar.">
 	<meta name="description" content="PeGacerus">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1">
 	<link id="page_favicon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATNJREFUOE9dUwESwyAIC/r/J8/sEkDZetvVKiaQQJAk9BBgAOE1wYhc5yciHHKfjAOCh1RkBnVIXdWnlvXO12AygBAY2MtH94Jw+9NMS0hKkfrhI94EyMilHIss06b/4X0i1sqUI+6ZCRKAWLHBUWVtm1QMIrAOAgHgDDuDDniqieUUYIopZudSKCmdyuAxpgUaYrmkFvBf/QCOrnUJ7eMzDlgSte0b/jWmMhSDNfB51daWri3R7HApI/inUpYogOqDxPBWpibbqiSV9gMVwOcjh9oFMe2tdK4PhwfBuN3ZWboVunNFlG00GE0f4DmjvX879DUoE+A20lD9VTZbt1TtGbkuEFg7a+4BUglPkedjs/eUxTlkDtHf1NxBeFN4ay8Wl37cSFJz7A4/ssHajjGZNb1fER/sw7+Y4c0AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
@@ -20,7 +20,7 @@
 							background: transparent;
 							border-top: 0 !important;
 							border-bottom: 0 !important;
-							border-left: 12px solid hsl( 120, 100%, 100% )
+							border-left: 12px solid #000
 							}
 
 	::-webkit-input-placeholder { font-size: 13px; color: #000 }
@@ -45,14 +45,9 @@
 		}
 
 		body{
-			position: absolute;
 			width: 100%;
-			height: 150%;
 			background: #fff;
-			background-image: url(pintulato_example_green.png);
-			background-size: 420px;
-			background-repeat: no-repeat;
-			background-position: center 250px
+			padding-bottom: 100px;
 			}
 
 
@@ -85,9 +80,77 @@
 				font-size: 36px;
 				letter-spacing: 3px
 				}
-				span{
-					font-size: 12px
+				h1 sup{ font-size: 14px }
+
+			#galery{
+					margin: 0 auto;
+					margin: 30px 0;
+					max-width: 700px;
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(180px, 180px)); /* tamaño fijo */
+					gap: 10px;
+					justify-content: center; /* centra todo el grid dentro del padre */
 					}
+			#galery div{
+						margin: 0 auto;
+						width: 180px;
+						height: 180px;
+						background-size: cover;
+						background-position: center;
+						border-radius: 3px;
+						}
+						#i1{ background: url( 1.jpg ) }
+						#i2{ background: url( 2.jpg ); visibility: hidden }
+						#i3{ background: url( 3.jpg ) }
+						#i4{ background: url( 4.jpg ); visibility: hidden }
+						#i5{ background: url( 5.jpg ) }
+						#i6{ background: url( 6.jpg ) }
+						#i7{ background: url( 2.jpg ) }
+
+@media( max-width: 700px ){
+							#galery{ grid-template-columns: repeat(auto-fit, minmax(120px, 120px)); max-width: 400px; }
+							#galery div{
+										width: 120px;
+										height: 120px;
+										gap: 8px;
+										}
+							}
+
+@media( max-width: 460px ){
+							#galery{ grid-template-columns: repeat(auto-fit, minmax(90px, 90px)); max-width: 300px; }
+							#galery div{
+										width: 90px;
+										height: 90px;
+										gap: 6px;
+										}
+							}
+
+@media( max-width: 330px ){
+							#galery{ grid-template-columns: repeat(auto-fit, minmax(80px, 80px)); max-width: 280px; }
+							#galery div{
+										width: 80px;
+										height: 80px;
+										gap: 4px;
+										}
+							}
+
+
+			footer{
+				font-family: sans-serif;
+				font-size: 12px;
+				}
+
+			.brand{
+				font-family: 'PeGacerus', sans-serif;
+				font-size: 24px;
+				font-weight: bold;
+				}
+				.brand sup{ font-size: 12px }
+
+			a{ 
+				color: #000;
+				text-decoration: none;
+				}
 
 	</style>
 </head>
@@ -110,8 +173,33 @@
 											</div>
 
 
-			<h1>PeGacerus</h1>
-			<!-- <span>Cra 4 # 13-12 B. Santa Teresa, Garzón - H.</span> -->
+			<h1>PeGacerus<sup>™</sup></h1>
+
+			<div id="galery">
+							<div id="i1"></div>
+							<div id="i2"></div>
+							<div id="i3"></div>
+							<div id="i4"></div>
+							<div id="i5"></div>
+							<div id="i6"></div>	
+							<div id="i7"></div>	
+							</div>
+
+			<footer>
+					<span class="brand">PeGacerus<sup>™</sup></span><br>Fabricamos productos para acabados en la construcción.
+					<br>
+					<br>
+					<b id="brands">
+					Pegante Cerámico &nbsp;&nbsp;&nbsp; Pintura Vinílica &nbsp;&nbsp;&nbsp; Estucos &nbsp;&nbsp;&nbsp; Impermeabilizantes &nbsp;&nbsp;&nbsp; Boquilla
+					</b>
+					<br>
+					<br>
+					<a href="https://wa.me/573125632891" title="Habla con nuestro representante: Edgar Rincón Salazar" target="blank">Whatsapp +57 3125632891</a> 
+					<br>
+					Cra 4 # 13-12 B. Santa Teresa, Garzón - Huila (Col).
+					<br>
+					email@pegacerus.com
+					</footer>
 
 
 			</center>
